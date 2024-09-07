@@ -1,6 +1,5 @@
 func isAnagram(s string, t string) bool {
 	m := make(map[rune]int)
-	
 
 	for _, v := range s {
 		m[v]++
@@ -11,11 +10,11 @@ func isAnagram(s string, t string) bool {
 	}
 
 	for _, v := range m {
-        if v != 0 {
-            return false
-        }
-    }
+		if v != 0 {
+			return false
+		}
+	}
 
-    return true
+	return true
 
 }
