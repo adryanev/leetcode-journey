@@ -11,7 +11,7 @@ func groupAnagrams(strs []string) [][]string {
         m[n] = append(m[n], v)
     }
 
-    var res [][]string
+    res := make([][]string, 0)
 
     for _, v := range m {
         res = append(res, v)
