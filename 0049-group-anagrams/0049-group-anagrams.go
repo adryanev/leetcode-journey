@@ -15,7 +15,7 @@ func groupAnagrams(strs []string) [][]string {
 }
 
 func sortWord(str string) string {
-     r := []rune(str)
+     r := []byte(str)
 
         sort.Slice(r, func (i, j int) bool {
            return r[i] < r[j]
