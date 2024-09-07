@@ -1,11 +1,30 @@
 func containsDuplicate(nums []int) bool {
-    m := make(map[int]int)
+    set := NewSet()
 
-    for i, v := range nums {
-        if _,ok := m[v]; ok {
-            return true;
+    for _, num := range nums {
+        if set.Has(num) {
+            return true
         }
-        m[v] = i
+        set.Add(num)
     }
     return false
+}
+
+type Set struct {
+    items map[int]struct{}
+}
+
+func NewSet() *Set {
+    return &Set{
+        items: make(map[int]struct{}),
+    }
+}
+
+func (s *Set) Add(val int) {
+    s.items[val] = struct{}{}
+}
+
+func (s *Set) Has(val int) bool {
+    _, ok := s.items[val]
+    return ok
 }
