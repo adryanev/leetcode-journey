@@ -2,7 +2,7 @@ func groupAnagrams(strs []string) [][]string {
     m := make(map[string][]string)
 
     for _, v := range strs {
-       r := []rune(v)
+       r := []byte(v)
 
         sort.Slice(r, func (i, j int) bool {
            return r[i] < r[j]
