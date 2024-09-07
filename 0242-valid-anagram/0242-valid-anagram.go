@@ -1,5 +1,3 @@
-import "strings"
-
 func isAnagram(s string, t string) bool {
 	m := make(map[rune]int)
 	
