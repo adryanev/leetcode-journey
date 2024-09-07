@@ -2,12 +2,7 @@ func groupAnagrams(strs []string) [][]string {
     m := make(map[string][]string)
 
     for _, v := range strs {
-       r := []byte(v)
-
-        sort.Slice(r, func (i, j int) bool {
-           return r[i] < r[j]
-        })
-        n := string(r)
+        n := sortWord(v)
         m[n] = append(m[n], v)
     }
 
@@ -17,4 +12,15 @@ func groupAnagrams(strs []string) [][]string {
         res = append(res, v)
     }
     return res
+}
+
+func sortWord(str string) string {
+     r := []byte(str)
+
+        sort.Slice(r, func (i, j int) bool {
+           return r[i] < r[j]
+        })
+       return string(r)
+
+        
 }
