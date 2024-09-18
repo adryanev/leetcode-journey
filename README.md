@@ -30,6 +30,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0049-group-anagrams](https://github.com/adryanev/leetcode-journey/tree/master/0049-group-anagrams) |
 | [0242-valid-anagram](https://github.com/adryanev/leetcode-journey/tree/master/0242-valid-anagram) |
+| [1894-merge-strings-alternately](https://github.com/adryanev/leetcode-journey/tree/master/1894-merge-strings-alternately) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -50,4 +51,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/adryanev/leetcode-journey/tree/master/0347-top-k-frequent-elements) |
+## Two Pointers
+|  |
+| ------- |
+| [1894-merge-strings-alternately](https://github.com/adryanev/leetcode-journey/tree/master/1894-merge-strings-alternately) |
 <!---LeetCode Topics End-->
